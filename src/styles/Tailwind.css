@@ -1,0 +1,99 @@
+/* === FLEX LAYOUTS === */
+.container {
+  @apply max-w-[1536px] mx-auto w-full;
+}
+
+
+.flex-center {
+    @apply flex items-center justify-center;
+  }
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+  .flex-column {
+    @apply flex flex-col;
+  }
+  .flex-rows {
+    @apply flex flex-row;
+  }
+  .flex-wraps {
+    @apply flex flex-wrap;
+  }
+  /* container padding */
+  .containerPaddings {
+    @apply px-10 p-3;
+  }
+  .containerPaddings_2 {
+    @apply px-10 p-1 ;
+  }
+  /* === GRID LAYOUTS === */
+  .grid-cols_t0 {
+    @apply grid grid-cols-2 gap-4;
+  }
+  .grid-cols-tre {
+    @apply grid grid-cols-3 gap-4;
+  }
+  .grid-cols-four {
+    @apply grid grid-cols-4 gap-6;
+  }
+  
+  /* === PADDING & MARGIN === */
+  .px-section {
+    @apply px-4 sm:px-6 md:px-8 lg:px-12;
+  }
+  .py-section {
+    @apply py-4 sm:py-6 md:py-8 lg:py-12;
+  }
+  .container-padding {
+    @apply px-4 md:px-8 lg:px-16;
+  }
+  
+  /* === BUTTON STYLES === */
+  .btn {
+    @apply px-4 py-2 font-semibold text-white rounded-lg transition-all duration-200;
+  }
+  .btn-primary {
+    @apply btn bg-primary hover:bg-blue-700;
+  }
+  .btn-secondary {
+    @apply btn bg-secondary hover:bg-yellow-600;
+  }
+  .btn-danger {
+    @apply btn bg-danger hover:bg-red-600;
+  }
+  .btn-success {
+    @apply btn bg-success hover:bg-green-600;
+  }
+  
+  /* === TEXT STYLES === */
+  .text-title {
+    @apply text-xl font-bold text-dark;
+  }
+  .text-subtitle {
+    @apply text-lg font-semibold text-gray-700;
+  }
+  .text-body {
+    @apply text-base text-gray-600;
+  }
+  .text-muted {
+    @apply text-sm text-gray-500;
+  }
+  
+  /* === BORDER & SHADOWS === */
+  .card {
+    @apply p-4 bg-white shadow-md rounded-lg;
+  }
+  .card-hover {
+    @apply card hover:shadow-lg transition-shadow duration-200;
+  }
+  .border-rounded {
+    @apply border border-gray-300 rounded-lg;
+  }
+  
+  /* === TRANSITIONS & EFFECTS === */
+  .transition-base {
+    @apply transition-all duration-200 ease-in-out;
+  }
+  .transition-fade {
+    @apply transition-opacity duration-200 ease-in-out;
+  }

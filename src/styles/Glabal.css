@@ -1,0 +1,74 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+body{
+    max-width: 1536px;
+    height: auto;
+    margin: 0 auto;
+}
+.container{
+    max-width: 1536px;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.header {
+    max-width: 1536px;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+}
+.select{
+    outline: none;
+    cursor: pointer;
+}
+.profilImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+.navbar{
+    max-width: 1536px;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.border-navbar{
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: #E4E4E4 solid 2px;
+
+}
+.banner {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+
+}
+.banner-text-box{
+    position: relative;
+
+}
+.banner-span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.extraOrder{
+    { backgroundImage: `url(${sectionBg})` }
+}
+
+  
