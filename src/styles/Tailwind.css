@@ -2,13 +2,17 @@
 .container {
   @apply max-w-[1536px] mx-auto w-full;
 }
-
-
+.testimon_margin{
+  @apply my-[10px]
+}
 .flex-center {
     @apply flex items-center justify-center;
   }
   .flex-between {
     @apply flex items-center justify-between;
+  }
+  .flex-between_top {
+    @apply flex justify-between;
   }
   .flex-column {
     @apply flex flex-col;

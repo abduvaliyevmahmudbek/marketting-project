@@ -4,8 +4,8 @@ import { FaFacebookF, FaInstagram } from 'react-icons/fa';
 
 function Footer() {
   return (
-    <footer className="bg-white mt-12 border-t border-gray-200 px-8">
-      <div className="container  p-3 containerPaddings_media_md py-10 grid gap-10 md:grid-cols-3 text-sm">
+    <footer className="bg-white container mt-12 px-8">
+      <div className="container p-3 containerPaddings_media_md py-10 grid gap-10 md:grid-cols-3 text-sm">
         <div className="space-y-4">
           <h2 className="text-lg font-bold">ESHIK DERAZA</h2>
           <p>Qo‘llab quvvatlash</p>
