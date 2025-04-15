@@ -5,11 +5,11 @@ import { FaFacebookF, FaInstagram } from 'react-icons/fa';
 function Footer() {
   return (
     <footer className="bg-white container mt-12">
-      <div className="container p-3 containerPaddings_media_md py-10 grid gap-10 md:grid-cols-3 text-sm">
-        <div className="space-y-4">
+      <div className="container p-3 containerPaddings_media_md py-2 grid gap-5 md:grid-cols-3 text-sm">
+        <div className="space-y-2">
           <h2 className="text-xl md:text-2xl font-bold">ESHIK DERAZA</h2>
           <p className="text-base md:text-lg">Qo‘llab quvvatlash</p>
-          <p className="font-semibold text-lg md:text-xl">+998888152077</p>
+          <p className="font-semibold text-lg md:text-lg">+998888152077</p>
           <div className="flex items-center gap-2">
             <FaMapMarkerAlt />
             <span className="text-base md:text-lg">Olmazor, Toshkent</span>
@@ -29,8 +29,8 @@ function Footer() {
           </ul>
         </div>
 
-        <div className="space-y-2">
-          <h3 className="font-semibold text-lg md:text-xl invisible md:visible">⠀</h3>
+        <div className="space-y-1">
+          <h3 className="font-semibold text-lg md:text-xl">Qo'shimcha</h3>
           <ul className="space-y-1">
             <li className="text-base md:text-lg">Eco-friendly</li>
             <li className="text-base md:text-lg">Bonus va aksiyalar</li>

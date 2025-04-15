@@ -1,6 +1,6 @@
 /* === FLEX LAYOUTS === */
 .container {
-  @apply max-w-[1536px] mx-auto w-full;
+  @apply max-w-[1180px] mx-auto w-full;
 }
 
 .testimon_margin{

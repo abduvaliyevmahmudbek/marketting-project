@@ -30,14 +30,14 @@ const Product: React.FC<ProductProps> = ({
   const navigate = useNavigate()
 
   return (
-    <div className="relative p-4 rounded-2xl shadow-md border border-gray-100 bg-white hover:shadow-lg transition duration-300">
+    <div className="relative rounded-2xl shadow-md border border-gray-100 bg-white hover:shadow-lg transition duration-300">
       {discount && (
-        <span className="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full font-medium">
+        <span className="absolute top-0 left-0 bg-red-500 text-white text-sm px-2 py-1 rounded-[16px_0px_16px_0] font-medium">
           Chegirma
         </span>
       )}
-      <img src={image} alt={name} className="mx-auto w-full object-contain rounded-lg bg-[#EDEEF2]" />
-      <div className="mt-4 space-y-1">
+      <img src={image} alt={name} className="mx-auto w-full object-contain rounded-[16px_16px_0px_0] bg-[#EDEEF2]" />
+      <div className="space-y-1 p-4">
         <div className="flex justify-between items-start">
           <h3 onClick={() => navigate(`product-detail/${name}`)} className="font-semibold text-lg text-gray-800 truncate cursor-pointer">{name}</h3>
           <div className="flex flex-col items-end text-yellow-500 text-xm font-medium">

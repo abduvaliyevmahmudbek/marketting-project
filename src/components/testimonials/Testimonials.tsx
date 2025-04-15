@@ -51,17 +51,17 @@ function Testimonials() {
             orientation="vertical"
             className="w-full"
           >
-            <CarouselContent className="h-[180px] sm:h-[150px] md:h-[520px] lg:h-[490px]">
+            <CarouselContent className="h-[160px] sm:h-[150px] md:h-[520px] lg:h-[490px]">
               {testimonials.map((item, index) => (
                 <CarouselItem key={index} className="pt-2 md:basis-1/3">
                   <div className="group my-2 border border-[#F3F3F3] rounded-xl bg-[#FAFAFA] shadow-md px-4 py-3 m-[5px] hover:bg-[#212121f0] transition-colors duration-300 space-y-2">
-                    <div className="text-2xl font-semibold group-hover:text-white">
+                    <div className="text-xl md:text-2xl font-semibold group-hover:text-white">
                       {item.name}
                     </div>
-                    <div className="text-base text-[#5d5d5d] group-hover:text-white">
+                    <div className="text-xm md:text-base text-[#5d5d5d] group-hover:text-white">
                       {item.message}
                     </div>
-                    <div className="text-lg text-[#2c2c2c] group-hover:text-white">
+                    <div className="text-base md:text-lg text-[#2c2c2c] group-hover:text-white">
                       {item.position}
                     </div>
                   </div>

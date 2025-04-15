@@ -5,6 +5,7 @@ import Header from '../../components/header/Header';
 import ExtraPages from '../../components/extraOrderSections/ExtraPages';
 import Testimonials from '@/components/testimonials/Testimonials';
 import Products from '../products/Products';
+import ProductFilters from '../products/ProductFilters';
 
 
 function Home() {
@@ -21,6 +22,8 @@ function Home() {
       
       {/* collection */}
       {/* <Collection /> */}
+      <ProductFilters/>
+      
       <Products />
       
       {/* testimonials */}

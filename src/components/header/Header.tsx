@@ -3,7 +3,8 @@ import imgPhone from '../../assets/images/icons/Vector (6).svg'
 
 function Header() {
   return (
-    <div className="header container bg-primary p-3 containerPaddings_media_md">
+    <div className='header bg-primary'>
+      <div className="container p-3 containerPaddings_media_md">
       <div className="flex-between">
       <div className="header-title flex items-center gap-2 cursor-pointer">
         <img src={imageLacation} alt="iconka" />
@@ -23,6 +24,7 @@ function Header() {
       </div>
       </div>
       </div>
+    </div>
     </div>
   )
 }
