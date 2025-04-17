@@ -1,7 +1,7 @@
 import Navbar from './../../components/navbar/Navbar';
 import Footer from './../../components/footer/Footer';
 import Header from '../../components/header/Header';
-// import Banner from '../../components/banner/Banner';
+import Banner from '../../components/banner/Banner';
 import ExtraPages from '../../components/extraOrderSections/ExtraPages';
 import Testimonials from '@/components/testimonials/Testimonials';
 import Products from '../products/Products';
@@ -18,7 +18,7 @@ function Home() {
       <Navbar />
       
       {/* hero section */}
-      {/* <Banner /> */}
+      <Banner />
       
       {/* collection */}
       {/* <Collection /> */}

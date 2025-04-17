@@ -36,28 +36,5 @@ body{
     margin: 0 auto;
 }
 
-.border-navbar{
-    width: 100%;
-    margin: 0 auto;
-    border-bottom: #E4E4E4 solid 2px;
-
-}
-.banner {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-
-}
-.banner-text-box{
-    position: relative;
-
-}
-.banner-span{
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #212121f0;
-    color: gray;
-}
 
   
