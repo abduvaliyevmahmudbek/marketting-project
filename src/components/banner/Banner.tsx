@@ -24,7 +24,7 @@ function Banner() {
 
         <div className="w-full md:w-1/2 flex-column items-start flex gap-5 py-4">
           <img src={bannerImg} alt="Chegirma eshik" className="hidden  w-full max-w-[550px] h-auto object-contain bg-white rounded-2xl" />
-          <img src={bannerImg_responsive} alt="Chegirma eshik" className="w-full bg-white md:bg-[#f4f4f6] w-full md:max-w-[300px] h-full object-fill rounded-2xl" />
+          <img src={bannerImg_responsive} alt="Chegirma eshik" className="w-full bg-white md:bg-[#f4f4f6] md:max-w-[300px] h-full object-fill rounded-2xl" />
           <button className="max-w-full sm:w-1/2 md:hidden w-full md:max-w-[300px] mt-2 bg-black text-white text-sm md:text-base font-medium py-2 px-5 rounded hover:bg-gray-800 transition">
             Sotib olish
           </button>

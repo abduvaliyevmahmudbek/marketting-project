@@ -54,7 +54,7 @@ function ProductDetail() {
         <div>
           <h1 className="text-2xl md:text-3xl font-bold mb-2 flex-between">
             {product.name}
-            <button className="text-xl border rounded-full p-2 hover:bg-gray-100">
+            <button title='liket' className="text-xl border rounded-full p-2 hover:bg-gray-100 mr-2">
               <BsHeart />
             </button>
           </h1>

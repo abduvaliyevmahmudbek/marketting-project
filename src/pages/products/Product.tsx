@@ -1,5 +1,5 @@
 import React from "react"
-import { BsBagCheckFill } from "react-icons/bs"
+import { BsBagCheckFill, BsHeart } from "react-icons/bs"
 import { useNavigate } from "react-router-dom"
 
 type ProductProps = {
@@ -36,6 +36,9 @@ const Product: React.FC<ProductProps> = ({
           Chegirma
         </span>
       )}
+      <button title='liket' className="absolute top-3 right-2 text-xl border rounded-full p-2 hover:bg-gray-100 mr-2">
+              <BsHeart />
+            </button>
       <img src={image} alt={name} className="mx-auto w-full object-contain rounded-[16px_16px_0px_0] bg-[#EDEEF2]" />
       <div className="space-y-1 p-4">
         <div className="flex justify-between items-start">
@@ -52,7 +55,7 @@ const Product: React.FC<ProductProps> = ({
             {oldPrice && <span className="text-xs text-gray-400 line-through absolute top-[-8px] left-[50px] w-[100px]">{oldPrice}</span>}
             <span className="text-lg font-bold text-black">{price}</span>
           </div>
-          <button className="bg-black text-white p-2 rounded-lg hover:bg-gray-800 transition">
+          <button type="button" title="Yopish" className="bg-black text-white p-2 rounded-lg hover:bg-gray-800 transition">
             <BsBagCheckFill className="h-4 w-4" />
           </button>
         </div>

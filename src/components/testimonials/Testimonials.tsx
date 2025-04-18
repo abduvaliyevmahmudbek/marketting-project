@@ -73,7 +73,7 @@ function Testimonials() {
           </Carousel>
         </div>
 
-        <div className="hidden md:flex flex justify-center w-full h-full testimon_margin">
+        <div className="hidden md:flex justify-center w-full h-full testimon_margin">
           <img
             src={testimonialHollPNG}
             alt="HOLL"

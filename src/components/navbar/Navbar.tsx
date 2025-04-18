@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import sorchIcon from '../../assets/images/icons/sorch.svg';
 import massageIcon from '../../assets/images/icons/massage.svg';
 import profilImg from '../../assets/images/pictures-png/profilImage.jpg';
@@ -15,11 +15,17 @@ function Navbar() {
   };
 
   const handleSearchSubmit = () => {
-
     console.log("Search Query:", searchQuery);
-    
-    toggleModal();
+    toggleModal(); 
   };
+
+  useEffect(() => {
+    const handleEsc = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setIsModalOpen(false);
+    };
+    document.addEventListener("keydown", handleEsc);
+    return () => document.removeEventListener("keydown", handleEsc);
+  }, []);
 
   return (
     <div className="navbar container flex-col p-3 containerPaddings_media_md">
@@ -58,9 +64,16 @@ function Navbar() {
 
       <div className="border-navbar containerPaddings"></div>
 
+      {/* Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white rounded-lg p-6 w-11/12 max-w-md">
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+          onClick={toggleModal} 
+        >
+          <div
+            className="bg-white rounded-lg p-6 w-11/12 max-w-md"
+            onClick={(e) => e.stopPropagation()} 
+          >
             <h2 className="text-lg font-bold mb-4">Qidiruv</h2>
             <Input
               type="text"
@@ -69,13 +82,7 @@ function Navbar() {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
-            <div className="flex justify-between">
-              <button 
-                className="bg-red-500 text-white px-4 py-2 rounded mr-2" 
-                onClick={toggleModal}
-              >
-                Yopish
-              </button>
+            <div className="flex justify-end">
               <button 
                 className="bg-blue-500 text-white px-4 py-2 rounded" 
                 onClick={handleSearchSubmit}
